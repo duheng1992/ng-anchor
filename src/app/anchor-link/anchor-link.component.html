@@ -1,0 +1,9 @@
+<a
+  (click)="goToClick($event)"
+  href="{{ suiHref }}"
+  class="ant-anchor-link-title"
+  title="{{ titleStr }}"
+>
+  <span *ngIf="titleStr; else titleTpl || template">{{ titleStr }}</span>
+</a>
+<ng-content></ng-content>
